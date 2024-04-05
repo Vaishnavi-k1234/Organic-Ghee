@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodies</title>
+  
+</head>
+
+<body>
+  {{>navbar loginUser=loginUser}}
+  
+  <section id="/">
+    <div class="container-fluid px-0 top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h1>Natural Ghee</h1>
+            <p>Our Farm is a Bio-diverse, Organic ecosystem, certified by ECOCERT and located in the beautiful village near Bangalore. <br>Our work is inspired by ancient wisdom and sustainability. Every time you buy from us, you help pull back carbon from the atmosphere into the soil, <br>secure rural livelihoods and empower women in our villages.</p>
+            <div class="mt-4">
+              <a href="https://wa.me/+918106167946?text=I'm%20interested%20in%20your%20Ghee%20to%20buy." class="hero-btn">WhatsApp Now</a>
+              {{!-- <button class="white-btn">Order now <i class="fas fa-angle-right ps-3"></i></button> --}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{!-- <section id="counter">
+    <section class="counter-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count1">4568</span>+
+            </h2>
+            <p>SAVINGS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count2">675</span>+
+            </h2>
+            <p>PHOTOS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count3">567</span>+
+            </h2>
+            <p>FOODS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count4">5673</span>+
+            </h2>
+            <p>CUSTOMERS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>--}}
+
+  <section id="about" class="my-5">
+    <div class="container">
+      <div class="row">
+          <img src="../public/image/img/background.jpeg"alt="">
+        <div class="col-md-10 mt-md-10 mt-5">
+          <h2>Welcome</h2>
+          <p>We're passionate about providing you with the finest organic ghee, crafted with care and dedication. Our organic ghee is more than just clarified butter; it's a celebration of purity, flavor, and health.<br>
+            <b>Why Choose Organic Ghee?</b><br>
+            Experience the Difference: Our organic ghee is sourced from the purest organic milk, free from synthetic hormones, antibiotics, and GMOs. With a commitment to organic farming practices, we ensure that every spoonful of our ghee is brimming with natural goodness.</p>
+          {{!-- <button class="main-btn">Learn More</button> --}}
+        </div>
+      </div>
+    </div>
+  </section> 
+
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/static/image/logo.png" style="height:auto;width:50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><i class="fa fa-home" style="font-size:22px"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register"><i class="fa fa-sign-in"></i>Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-cart-shopping"></i><small
+                class="cart-num">0</small></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Your existing HTML content -->
+
+  <section id="exploreFood">
+    <section class="container my-5">
+      <div class="text-center mx-md-5 px-md-5">
+        <h2 class="pb-0 mb-0">Our Products</h2>
+      </div>
+      <div class="row my-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/static/image/img/Ghee1.jpeg" class="img-fluid mb-2" alt="">
+            <h4>Pure Ghee</h4>
+            <p class="text-color">Quantity: 1</p>
+            <h2 class="primary-color mb-3"> <i class="fa-solid fa-indian-rupee-sign"></i>300</h2>
+            <div>
+              <button class="main-btn add-to-cart-btn" data-product="Pure Ghee" data-price="300">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Other product cards -->
+    
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/static/image/img/Ghee3.jpeg" class="img-fluid mb-2" alt=""style="height: 250px;">
+            <h4>Pure Ghee</h4>
+            <p class="text-color">Quantity: 1</p>
+            <h2 class="primary-color mb-3"> <i class="fa-solid fa-indian-rupee-sign"></i>300</h2>
+            <div>
+              <button class="main-btn add-to-cart-btn" data-product="Pure Ghee" data-price="300">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/static/image/img/Ghee1.jpeg" class="img-fluid mb-2" alt="">
+            <h4>Pure Ghee</h4>
+            <p class="text-color">Quantity: 1</p>
+            <h2 class="primary-color mb-3"> <i class="fa-solid fa-indian-rupee-sign"></i>300</h2>
+            <div>
+              <button class="main-btn add-to-cart-btn" data-product="Pure Ghee" data-price="300">Add to cart</button>
+            </div>
+          </div>
+    </section>
+  </section>
+
+  <!-- Your existing HTML content -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"><img style="width:70px;height:40px" src="/static/image/logo.png"
+              alt=""> Your Food Basket.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body cart-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="/user/orderFood" type="button" class="btn btn-primary checkout-btn ">Check out food</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include necessary JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/script.js"></script>
+
+  <!-- JavaScript code for adding products to the cart -->
+  <script>
+    $(document).ready(function () {
+      // Define an array to hold cart items
+      let cartItems = [];
+
+      // Function to update the cart count in the UI
+      function updateCartUI() {
+        $('.cart-num').text(cartItems.length);
+      }
+
+      // Function to add an item to the cart
+      function addToCart(productName, price) {
+        cartItems.push({ productName, price });
+        updateCartUI();
+        updateCartModal();
+      }
+
+      // Function to update the cart modal content
+      function updateCartModal() {
+        let cartBody = $('.cart-body');
+        cartBody.empty();
+        if (cartItems.length === 0) {
+          cartBody.append('<p>Your cart is empty</p>');
+        } else {
+          cartItems.forEach(item => {
+            cartBody.append(`<p>${item.productName} - ${item.price}</p>`);
+          });
+        }
+      }
+
+      // Event listener for the "Add to Cart" buttons
+      $('.add-to-cart-btn').click(function () {
+        const productName = $(this).data('product');
+        const price = $(this).data('price');
+        addToCart(productName, price);
+      });
+
+      // Update the cart modal when it is shown
+      $('#staticBackdrop').on('shown.bs.modal', function () {
+        updateCartModal();
+      });
+    });
+  </script>
+
+</body>
+
+  {{!-- <section id="testinomial">
+    <div class="container my-5 mx-md-5 px-md-5">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item text-center active">
+            <img style="width:150px;height:auto;border-radius:50%" src="/static/image/review/review-1.jpg" alt="...">
+            <div class="my-4">
+              <h4 class="">John K Leone</h4>
+              <p class="text-light">Some representative placeholder content for the first slide Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nesciunt perferendis qui exercitationem deleniti sed obcaecati..</p>
+            </div>
+          </div>
+          <div class="carousel-item text-center ">
+            <img style="width:150px;height:auto; border-radius:50%" src="/static/image/review/review-2.jpg" alt="...">
+            <div class="my-4">
+              <h4 class="">Nancy Whiller</h4>
+              <p class="text-light">Some representative placeholder content for the first slide Lorem ipsum dolor sit amet consectetur
+                deleniti Lorem, ipsum dolor sit amet consectetur adipisicing elit. sed obcaecati..</p>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </section> --}}
+
+  {{!-- <section id="subscription">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="mb-0">Hurry Up! Subscribe Our Newsletter And Get 25% Off</h2>
+        <p class="text-color">Limmited time offer for this month. No creadit card required.</p>
+        <div class="text-center my-5">
+          <form action="">
+            <div class="row">
+              <div class="col-md-4 offset-md-3 ">
+                          <input class="mt-1 form-control" type="text" placeholder="Enter Email Id...">
+              </div>
+               <div class="col-md-2 mt-2 ">
+                       <button class="main-btn">Subscribe</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> --}}
+
+ <section id="footer" class="footer">
+    <h4>Our Social Media Handles</h4>
+    <p>For more visit our Social media sites</p>
+    <div class="icons">
+        {{!-- <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+       <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-envelope"></i>  --}}
+         <a href="https://www.linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a> 
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by easy Online Services</p>
+</section>
+
+ 
+</body>
+
+</html>
